@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <html>
+  <!-- Модули кросбраузерности-->
+  <!--[if lte IE 8]
+  <script src="/public/js/gooddeals/html5shiv/respond.min.js"></script>
+  <![endif]-->
     <head>
         <title><?php echo $this->meta['meta_title']; ?></title>
         <meta http-equiv="Content-Type" content="application/json" charset="utf-8" />
@@ -9,13 +13,23 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" type="image/x-icon" href="/<?php echo DIR_IMAGES; ?>favicon.ico" />
         <link rel="icon" type="image/x-icon" href="/<?php echo DIR_IMAGES; ?>favicon.ico" />
-
+        
         <!-- Общие модули для всех разделов сайта -->
         <link href="/public/css/style.css" rel="stylesheet">
         <link href="/public/css/checkbox.css" rel="stylesheet">
         <link href="/public/css/bootstrap_alert.css" rel="stylesheet" type="text/css" />
         <link href="/public/css/flickr_ultim.css" media="screen" rel="stylesheet" type="text/css" />
-
+        <!-- Мои модуля -->
+        <link rel="stylesheet" href="/public/css/gooddeals/reset.css">
+        <link rel="stylesheet" href="/public/css/gooddeals/normalize.css">
+        <link rel="stylesheet" href="/public/css/gooddeals/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/public/css/gooddeals/animate/animate.min.css">
+        <link rel="stylesheet" href="/public/css/gooddeals/owl-carousel/owl.theme.css">
+        <link rel="stylesheet" href="/public/css/gooddeals/owl-carousel/owl.carousel.css">
+        <link rel="stylesheet" href="/public/css/gooddeals/owl-carousel/owl.transitions.css">
+        <link rel="stylesheet" href="/public/css/gooddeals/calendar/zabuto_calendar.css">
+        <link rel="stylesheet" href="/public/css/gooddeals/main.css">
+        <link rel="stylesheet" href="/public/css/gooddeals/media.css">
         <script src="/public/js/jquery-1.11.2.min.js"></script>
 
         <!-- Загрузка модулей, специфических для загружаемого раздела сайта -->
@@ -335,12 +349,31 @@
 
 
             <div id="scroller"></div>
-
+            <!-- Модули кросбраузерности-->
+            <!--[if lt IE 9]>   
+            <script src="/public/js/gooddeals/html5shiv/es5-shim.min.js"></script>
+            <script src="/public/js/gooddeals/html5shiv/html5shiv.min.js"></script>
+            <script src="/public/js/gooddeals/html5shiv/html5shiv-printshiv.min.js"></script>
+            <script src="/public/js/gooddeals/respond.min.js"></script><![endif]-->
             <script src="/public/js/jquery.easing.1.3.js"></script>
             <script src="/public/js/bootstrap_alert.js"></script>
             <script src="/public/js/circ.js"></script>
             <script src="/public/js/init.js"></script>
             <script src="/public/js/common.js"></script>
+            
+
+
+            <!-- My JS-->
+            <script src="/public/js/gooddeals/jquery/jquery-2.1.4.min.js"></script>
+            <script src="/public/js/gooddeals/owl-carousel/owl.carousel.min.js"></script>
+            <script src="/public/js/gooddeals/ulslider/jquery.mousewheel.js"></script>
+            <script src="/public/js/gooddeals/ulslider/jquery.ulslide.js"></script>
+            <!-- Календарь js-->
+            <script src="/public/js/gooddeals/calendar/zabuto_calendar.js"></script>
+            <!-- init js file-->
+            <script src="/public/js/gooddeals/init.js"></script>
+            
+
 
             <?php
             switch ($this->path['module']) {
@@ -369,5 +402,6 @@
             ?>
 
             <?php ShowAlertIfMessageExists(); ?>
+
 </body>
 </html>
