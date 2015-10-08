@@ -1,0 +1,846 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 15.09.2015, 13:26:20
+    Author     : Димон
+*/
+
+/* Market main page*/
+#big_tree{
+    width:100%;
+}
+#tree{
+    //position: relative;
+    float: left;   
+    width:60%;
+}
+#ban{
+    position: absolute;
+    z-index: 22;
+    top:-2px;
+    left:45%;
+}
+#in_tree{
+    width:100%;
+}  
+#miracle{
+    width: 100% ;
+}
+#trans{
+    display: inline-block;
+    position:absolute;
+    left: 5%;
+    top: 24%;
+}
+#trans img {
+    position:relative;
+    width: 90%;
+    cursor: pointer;
+}
+#toys{
+    display: inline-block;
+    position:absolute;
+    left: 10%;
+    top: 10%;
+}
+#toys img {
+    position:relative;
+    width: 80%;
+    cursor: pointer;
+}
+#act{
+    display: inline-block;
+    position:absolute;
+    left: 20%;
+    top: 20%;
+}
+#act img {
+    position:relative;
+    width: 80%;
+    cursor: pointer;
+}
+#dress{
+    display: inline-block;
+    position:absolute;
+    left: 23%;
+    top: 5%;
+}
+#dress img {
+    position:relative;
+    width: 85%;
+    cursor: pointer;
+}
+#books{
+    display: inline-block;
+    position:absolute;
+    left: 37%;
+    top: 5%;
+}
+#books img {
+    position:relative;
+    width: 80%;
+    cursor: pointer;
+}
+#shoes{
+    display: inline-block;
+    position:absolute;
+    left: 35%;
+    top: 20%;
+}
+#shoes img {
+    position:relative;
+    width: 80%;
+    cursor: pointer;
+}
+#other{
+    display: inline-block;
+    position:absolute;
+    left: 47%;
+    top: 14%;
+}
+#other img {
+    position:relative;
+    width: 80%;
+    cursor: pointer;
+}
+#kol{
+    display: inline-block;
+    position:absolute;
+    left: 45%;
+    top: 30%;
+}
+#kol img {
+    position:relative;
+    width: 80%;
+    cursor: pointer;
+}      
+#meb{
+    display: inline-block;
+    position:absolute;
+    left: 12%;
+    top: 38%;
+}
+#meb img {
+    position:relative;
+    width: 80%;
+    cursor: pointer;
+}   
+
+#s_ban{
+    position: absolute;
+  width: 42%;
+  background-color: white;
+  height: 100px;
+  top: 10%;
+  left: 55%;
+  z-index: -1;
+  padding-top: 70px;
+}
+
+#in_s_ban{
+    width:82%;
+    text-align: justify;
+    margin-left: 10%;
+    color:#78098c;
+    font-weight: bold;    
+    margin-top: -10%;
+}
+#stih{
+    position: absolute;
+    width: 40%;
+    top: 30%;
+    left: 70%;
+    z-index: 5;
+
+}
+#comiss{
+    position: absolute; 
+    top:54%;
+    left:23%;
+}
+#comiss img{
+    width:85%;  
+    cursor: pointer;
+}      
+
+/* menu button market*/    
+.menu_button{
+    clear: both;
+    width:100%;
+}
+.menu_button img{
+    width:18%;
+    margin-right: 5px;
+    float:left;
+    cursor:pointer;
+}
+
+
+.block_menu{
+    width:300px;
+    float:left;
+}
+
+.block_menu img{
+    cursor: pointer;
+}      
+
+#body_center_tovar{
+    float:left;
+    width:53%;
+    min-height: 600px;
+
+}
+
+#flag{
+    width:100%;
+    text-align: center;
+}
+#body_center_content_comm{
+    //position:relative;
+    height:auto;
+    //overflow:hidden;
+} 
+#body_center_content_mark{
+    //position:relative;
+    min-height:600px;
+    //overflow:hidden;
+} 
+#body_center_left_column_comm{
+    width:300px;
+    position:relative;
+    float:left;
+    top:100px;
+    left:0px;
+}
+#add_advert{
+    margin-left: -40px;
+}
+#add_advert img{
+    width:100%;
+    cursor:pointer;
+}
+#filtr{
+    width:298px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:7px;
+    border-top:2px solid #fff;
+    border-left:1px solid #e8deea;
+    border-right:1px solid #e8deea;
+    border-bottom:1px solid #e8deea;
+    background-color:rgba(255, 255, 255, 0.6);
+    text-align:center;
+    margin-bottom:15px;
+}
+.header_filtr{
+
+    margin-top:20px;
+    color:#42104a;
+}
+.in_fil{
+    width:80%; 
+    text-align:left;
+    padding-left:10%;
+}
+
+.form_filtr span{
+    color:#787578;
+    font-size: 10pt;
+    font-weight: bold;
+}
+.hr{
+    clear:both;
+    border-top:1px dashed #787578;
+    margin-top: 10px;
+}
+.form_filtr .r_border{
+    height:30px;
+    border:1px solid #787578;
+    border-radius: 8px;
+    width: 50px;
+    text-align: center;
+}
+
+.form_filtr ul.radio-group li {
+    position: relative;
+    list-style: none;
+    padding: 10px;
+    text-align: left;
+}
+
+.form_filtr input[type="radio"] {
+    opacity: 0;
+
+}
+
+.form_filtr input[type="radio"] + label > i {
+    position: relative;
+    border-radius: 12px;
+    width: 14px;
+    height: 14px;
+    background-color: #FFFFFF;
+    border: 1px solid #bcbcbc;
+    margin: 0 1em 0 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.form_filtr input[type="radio"]:checked + label > i i {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    border-radius: 4px;
+    border: none;
+    background: #801793;
+}
+
+#slider{
+    width:90%;
+    margin-left: 5%;
+}
+
+.tovar{
+    width: 47%;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.5);
+    float: left;
+    margin-left: 2%;
+    margin-top: 15px;
+    border: 2px solid #a78cce;
+    border-radius: 4px;
+    color: #825ebc;
+    font-weight: 600;
+}
+
+.tovar:hover{
+    box-shadow: 6px 6px 21px -9px #000000;
+}
+
+.tovar_ch{
+    width: 47%;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.5);
+    float: left;
+    margin-left: 1.5%;
+    margin-top: 15px;
+    border: 2px solid #a78cce;
+    border-radius: 4px;
+    color: #825ebc;
+    font-weight: 600;
+}
+
+.tovar_ch:hover{
+    box-shadow: 6px 6px 21px -9px #000000;
+}
+
+.tovar_ch span{
+    float: left;
+    margin-right: 7%;
+    margin-left: 4%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width:50%;
+}
+
+.tovar_ch img{
+    max-width:100%; 
+    max-height:100%
+}
+
+
+.tovar span{
+    float: left;
+    margin-right: 7%;
+    margin-left: 4%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width:50%;
+}
+
+.tovar img{
+    max-width:100%; 
+    max-height:100%
+}
+
+#dt{
+    height: 50%;
+    width: 81%;
+    margin-left: 5%;
+    margin-top: 3%;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.imgtov{
+    position: relative;
+    width: 60%;
+    margin-left: 4%;
+    float:left;
+    background-color: white;
+}
+#small{
+    min-height: 100px;
+    max-height: 360px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.smallimgtov{
+
+    width:50%;
+    margin-left: 40px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    background-color: white;
+}
+.sity{
+    color: #a8cf45;
+    font-weight: 600;
+    width: 26% !important;
+    margin-right: 0px !important;
+    margin-top: 5px !important;
+}
+
+.m_desc{
+    color: #433646;
+    font-weight: 600;
+    width: 90% !important;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    float:left;
+    margin-top: -15px;
+}
+.mdesc_1{
+    color: #433646;
+    font-weight: 600;
+    width: 26% !important;
+    margin: 0px !important;
+    margin-top: 5px !important;
+}
+
+.m_desc_full{
+    color: #433646;
+    font-weight: 600;
+    width: 70% !important;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    float: left;
+}
+
+.m_desc_f{
+    color: #433646;
+    font-weight: 600;
+    margin-right: 10%;
+    float: left;
+    width: 65%;
+    padding: 15px;
+
+}
+#price{
+    background-image: url(/public/images/market/price.png);
+    background-repeat: no-repeat;
+    color: white;
+    width: 37%;
+    height: 30px;
+    float: left;
+    text-align: center;
+    padding-top: 5px;
+    margin-top:-10px;
+
+}
+/* card of tovar*/
+
+.tovar_card{
+    width: 90%;
+    margin-left: 5%;
+    background: rgba(255, 255, 255, 0.5);
+    border:2px solid #a78cce;
+    border-radius: 4px;
+    color:#825ebc;
+    font-weight: 600;
+    padding:10px 10px 0px 10px;
+}
+.tovar_card h2 span{
+    clear:both;
+    margin: 10px;
+    float: left;
+    margin-right: 50%;
+
+}
+#price_t{
+    background-image: url(/public/images/market/price.png);
+    background-repeat: no-repeat;
+    color: white;
+    width: 19%;
+    height: 30px;
+    float: left;
+    text-align: center;
+    padding-top: 5px;
+    margin-top: -10px;
+}
+
+#left_block{
+    width: 100%;
+    margin-bottom: 10px; 
+    max-height: 250px;
+    clear: both;
+}
+#user_info{
+    width:90%;
+    margin: 10px;
+}
+#avatar{
+
+    width:100px;
+    height: 100px;
+    border-radius: 100px;
+    border: 3px solid #ab91d3;
+    vertical-align: middle;
+    float: left;
+
+}
+.username{
+    color:#a8cf45;
+    margin: 30px;
+    float: left;
+}
+.usercity{
+    color:#333;
+    margin: 10px;
+    margin-left: 0px;
+
+}
+#cont{
+    margin-left: 45%;
+    padding-top: 4%;
+}
+#cont img{
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.phone{
+    color: #433646;
+    cursor: pointer;
+}
+.m_desc_k{
+    color: #433646;
+    font-weight: 600;
+}
+#new_komm{
+    width:100%;
+    height:50px;
+    border:1px solid #825ebc;
+    border-radius: 6px;
+    padding:5px;
+
+}
+/* add new tovar*/
+#adve_block{
+    width: 65%;
+    height: 30px;
+    background-color: white;
+    margin-left: 5%;
+}
+#adve{
+    color: #fd9182;
+    padding-left: 10px;
+
+}
+#red_star{
+    float: right;
+    margin-top: -20px;
+    padding-right: 10px;
+    margin-left: 25%;
+    color: #b295df;
+}
+#left_add{
+    width:40%;
+    float:left;
+    margin-left: 5%;
+    margin-top:10px;
+}
+#right_add{
+    margin-left: 5%;
+    margin-top:10px;
+    width:39%;
+    float:left;
+    text-align: right;
+}
+.headadd{
+    color:#3a0144;
+    font-weight: bold;
+}
+#ad_tov input, textarea{
+    padding: 5px;
+    font-family: Arial;
+}
+
+#ad_tov input[type="radio"] {
+    opacity: 0;
+}
+
+#ad_tov  input[type="radio"] + label > i {
+    position: relative;
+    border-radius: 4px;
+    width: 18px;
+    height: 18px;
+    background-color: #FFFFFF;
+    border: 1px solid #bcbcbc;
+    margin: 0 1em 0 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+#ad_tov input[type="radio"]:checked + label > i i {
+    display: inline-block;
+    width: 22px;
+    height: 17px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border: none;
+    background-image: url(/public/images/market/bird.png);
+}
+
+#ad_tov label{
+    font-size: 15px !important;
+    color:#333333;
+    font-weight: bold;
+}
+
+#ad_tov input[type="text"]{
+    margin-top: 25px;
+    border-radius: 4px;
+    margin-left:13%;
+    width:48%;
+    height: 20px;
+}
+#ad_tov input[type="email"]{
+    margin-top: 25px;
+    border-radius: 4px;
+    margin-left:13%;
+    width:48%;
+    height: 20px;
+}
+.for_cat{
+    padding-left: 5px !important;
+    border-radius: 4px;
+    width:50%;
+    height: 25px;
+    margin-top: 25px;
+    background-color: #fff;
+    font-size:12px;
+    margin-left:14%;
+    direction: ltr;
+}
+#desc_sh{
+    width: 48%;
+    height: 50px;
+    border-radius: 4px;
+    margin-top:5%;
+    margin-left:2%;
+}
+#full_sh{
+    width: 48%;
+    height: 100px;
+    border-radius: 4px;
+    margin-top:5%;
+    margin-left:4.5%;
+}
+#cost{
+    margin-left: 16% !important;
+}
+
+#groups input[type="radio"] + label > i {
+    position: relative;
+    border-radius: 12px;
+    width: 14px;
+    height: 14px;
+    background-color: #FFFFFF;
+    border: 1px solid #bcbcbc;
+    margin: 0 1em 0 0;
+    display: inline-block;
+    vertical-align: middle;
+
+}
+
+#groups input[type="radio"]:checked + label > i i {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    border-radius: 4px;
+    border: none;
+    background: #801793;
+}
+
+#groups span{
+    font-size: 14px !important;
+    color:#333333;
+    font-weight: lighter;
+    margin-top: 10px;
+}
+#more_girl{
+    width: 80%;
+    margin-top: 10%;
+}
+.thumb {
+    height: 75px;
+    border: 1px solid #000;
+    margin: 10px 5px 0 0;
+}
+
+#butt{
+    vertical-align: middle;
+    margin-left: 50%;
+    cursor:pointer;
+}
+#komms{
+    margin-left: 4.5%;
+    background-color: #FFFFFF;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    width:90%;
+    padding:10px;
+}
+#komms textarea{
+    width: 98%;
+    height:200px;
+    border-radius: 4px;
+}
+.of_komm{
+    font-size: large;
+    margin-right:45%;
+    color:#000;
+}
+.of_komm_m{
+    font-size: 15px;
+    color:#333;
+}
+.of_komm_slow{
+    font-size:12px;
+    color:#000;
+}
+.t_k{
+    width:98%;
+    border-radius: 3px;
+    height: 25px;
+}
+#show_komments{
+    background-color: #FFFFFF;
+    opacity: 0.9;
+    filter:alfa(90);
+    padding:10px;
+}
+
+.tovar_gs{
+
+    width: 20%;
+    height: 280px;
+    background: rgba(255, 255, 255, 0.5);
+    float: left;
+    margin-left: 2%;
+    margin-top: 15px;
+    border: 2px solid #a78cce;
+    border-radius: 4px;
+    color: #825ebc;
+    font-weight: 600;
+}
+
+.tovar_gs:hover{
+    box-shadow: 6px 6px 21px -9px #000000;
+}
+
+.tovar_gs #dt{
+    height: 50%;
+    width: 81%;
+    margin-left: 3.5%;
+    margin-top: 3%;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.tovar_gs #price{
+    background-image: url(/public/images/market/price.png);
+    background-repeat: no-repeat;
+    color: white;
+    width: 50%;
+    height: 30px;
+    float: left;
+    text-align: center;
+    padding-top: 5px;
+    margin-top:-10px;
+
+}
+.tovar_gs span{
+    float: left;
+    margin-right: 7%;
+    margin-left: 4%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width:35%;
+}
+.tovar_gs .sity{
+    color: #a8cf45;
+    font-weight: 600;
+    width: 34% !important;
+    margin-right: 0px !important;
+    margin-top: 5px !important;
+}
+
+.tovar_gs img{
+    max-width:100%; 
+    max-height:100%
+}
+
+.tovar_gs .mdesc_1{
+    color: #433646;
+    font-weight: 600;
+    width: 35% !important;
+    margin: 0px !important;
+    margin-top: 5px !important;
+}
+#look_my{
+    float:left;
+    margin-left:2%;
+    background-color:#cbb4e8; 
+    font-weight:bold; 
+    text-align:center;
+    padding:10px;width:40%;
+    border-radius:6px;
+}
+
+#look_my a{
+    color:white;
+}
+
+
+#go_more{
+    float:left;
+    margin-left:2%;
+    background-color:#ffab9e; 
+    font-weight:bold; 
+    text-align:center;
+    padding:10px;
+    width:40%;
+    border-radius:6px;
+}
+#go_more a{
+    color:white;
+}

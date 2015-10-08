@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /admincp/
+Disallow: /auth/
+Disallow: /app/
+Disallow: /core/
+Disallow: /forum/admincp/
+Disallow: /forum/calendar.php
+Sitemap: http://www.karapuz.life/sitemap.xml

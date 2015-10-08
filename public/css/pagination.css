@@ -1,0 +1,88 @@
+.mypagination{
+    width:100%;
+    /*height:37px;*/
+    float:left;
+    text-align:center;
+    color:#2d262e;
+    font-size:14px;
+    margin:0px;
+    line-height:normal;
+}
+.mypagination ul{
+    list-style-type:none;
+}
+.mypagination ul li, ul button{
+    display:inline-block;
+}
+.mypagination ul li{
+    box-sizing: content-box;
+    margin:0 5px 3px 0;
+    padding: 0;
+}
+.mypagination li.first, li.prev, li.next, button.first, button.prev, button.next{
+    background-color:rgba(255, 255, 255, 0.6);
+    border:1px solid #c8bdbc;
+    cursor:pointer;
+    /*padding:10px 13px 0 13px;*/
+}
+/*.mypagination li.first:hover, li.prev:hover, li.next:hover, li.active:hover, button.first:hover, button.prev:hover, button.next:hover, button.active:hover{*/
+.mypagination li.first:hover, li.prev:hover, li.next:hover, button.first:hover, button.prev:hover, button.next:hover{
+    /*background-color:rgba(255, 255, 255, 1);*/
+    background-color:#F0F8FF;
+}
+.mypagination li.first, li.prev, li.next, button.first, button.prev, button.next{
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    border-radius:3px;
+}
+.mypagination li.prev, li.next, button.prev, button.next{
+    width: 80px;
+}
+.mypagination li.active, button.active{
+    -moz-border-radius:25px;
+    -webkit-border-radius:25px;
+    border-radius:25px;
+    background-color:#FAEBD7;
+    border:1px solid #c8bdbc;
+}
+.mypagination li:hover, .mypagination button:hover {
+    font-weight: bold;
+}
+.mypagination li.active:hover, button.active:hover, li:hover button.active{
+    font-weight: normal;
+    background-color:#FAEBD7;
+    pointer-events: none;
+    cursor:default;
+}
+.mypagination li.normal:hover , li:hover button.normal{
+    -moz-border-radius:25px;
+    -webkit-border-radius:25px;
+    border-radius:25px;
+    border:1px solid #c8bdbc;
+    background-color:#F0F8FF;
+}
+.mypagination li a {
+    display:block;
+    padding: 10px 13px 9px 13px;
+    color: #3a0144;
+    text-decoration: none;
+}
+.mypagination button {
+    display:block;
+    padding: 10px 13px 9px 13px;
+    color: #3a0144;
+    outline:none;
+}
+.mypagination li.normal, button.normal {
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 1px solid transparent;
+}
+.mypagination .isdisabled{
+    pointer-events: none; 
+    opacity: 0.5; 
+    cursor: default; 
+    background-color:rgba(255, 255, 255, 0.6); 
+    font-weight: normal;
+}

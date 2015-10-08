@@ -1,0 +1,44 @@
+AddDefaultCharset UTF-8
+<IfModule mod_rewrite.c>
+	Options +FollowSymLinks
+    RewriteEngine On
+	RewriteBase /
+
+	RewriteCond %{HTTP_HOST} ^www\.(.*) [NC]
+	RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+	
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^forum\/$ /forum/index.php [QSA,L]
+    RewriteRule ^admin\/$ /admin/index.php [QSA,L]
+    RewriteRule ^forum\/admincp\/$ /forum/admincp/index.php [QSA,L]
+	RewriteRule ^([^\.]*)\/$ index.php?_url=/$1 [QSA,L]
+	RewriteRule ^([^\.]*)$ index.php?_url=/$1 [QSA,L]
+</IfModule>
+
+# BEGIN EXPIRES
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresDefault "access plus 1 day"
+    ExpiresByType text/css "access plus 1 day"
+    ExpiresByType text/plain "access plus 1 day"
+    ExpiresByType image/gif "access plus 1 month"
+    ExpiresByType image/png "access plus 1 month"
+    ExpiresByType image/jpeg "access plus 1 month"
+    ExpiresByType application/x-javascript "access plus 1 day"
+    ExpiresByType application/javascript "access plus 1 day"
+    ExpiresByType application/x-icon "access plus 1 month"
+</IfModule>
+# END EXPIRES
+
+
+# ENABLE DEFLATE
+<IfModule mod_deflate.c>
+  # html, xml, css, and js:
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css application/x-javascript text/javascript    application/javascript application/json
+  # webfonts and svg:
+  <FilesMatch "\.(ttf|otf|eot|svg)$" >
+    SetOutputFilter DEFLATE
+  </FilesMatch>
+</IfModule>
+# END ENABLE DEFLATE

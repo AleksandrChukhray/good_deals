@@ -1,0 +1,104 @@
+/* http://www.wufoo.com/guides/custom-radio-buttons-and-checkboxes/
+    Hide the original radios and checkboxes (but still accessible)
+        :not(#foo) > is a rule filter to block browsers
+                     that don't support that selector from
+                     applying rules they shouldn't
+
+    example:
+    <div class="MyCheckBox">
+        <input id="Field2" name="Field2" type="checkbox" value="First Choice" checked="checked"/>
+        <label for="Field2">First Choice</label>
+    </div>
+*/
+.MyCheckBox:not(#foo)  {
+    margin: 10px 0 10px 0;
+    line-height: normal !important;
+}
+
+.MyCheckBox:not(#foo) > input[type='radio'],
+.MyCheckBox:not(#foo) > input[type='checkbox'] {
+    opacity: 0; /* Hide the input, but have it still be clickable */
+    float: left;
+    width: 20px;
+    height: 20px;
+    outline: 0; /* disable focus for Opera*/
+    margin: 0;
+}
+
+.MyCheckBox:not(#foo) > input[type='checkbox'] + label,
+.MyCheckBox:not(#foo) > input[type='radio'] + label {
+    margin: 0 0 0 -20px;
+    clear: none;
+    padding: 2px 0 1px 28px; /* Left padding makes room for image */    
+    cursor: pointer; /* Make look clickable because they are */
+    min-height: 21px;
+    
+    /* CSS rule to disable text selection highlighting */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;    
+}
+.MyCheckBox:not(#foo) > input[type='radio'] + label {
+    background: url('/public/images/radio_unchecked.png') left top no-repeat;
+}
+.MyCheckBox:not(#foo) > input[type='checkbox'] + label {
+    background: url('/public/images/checkbox_unchecked_20.png') left top no-repeat;
+    font-size: 16px;
+}
+
+/* Change from unchecked to checked graphic */
+.MyCheckBox:not(#foo) > input[type='radio']:checked + label {
+    background-image: url('/public/images/radio_checked.png');
+}
+.MyCheckBox:not(#foo) > input[type='checkbox']:checked + label {
+    background-image: url('/public/images/checkbox_checked_20.png');
+}
+
+.MyGridCheckBox:not(#foo) {
+    display: inline-flex;
+    margin-top: 4px;
+}
+
+.MyGridCheckBox:not(#foo) > input[type='checkbox'],
+.MyGridCheckBoxWithLabel:not(#foo) > input[type='checkbox'] {
+    opacity: 0; /* Hide the input, but have it still be clickable */
+    float: left;
+    height: 20px;
+    width: 20px;
+    margin: 0;
+    outline: 0; /* disable focus for Opera*/
+
+}
+.MyGridCheckBox:not(#foo) > input[type='checkbox'] + label,
+.MyGridCheckBoxWithLabel:not(#foo) > input[type='checkbox'] + label {
+    min-width: 20px;
+    margin: 0 0 0 -20px;
+    clear: none;
+    cursor: pointer; /* Make look clickable because they are */
+    min-height: 20px;
+    background: url('checkbox_unchecked.png') left top no-repeat; /* 20x20px */
+    
+    /* CSS rule to disable text selection highlighting */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;    
+}
+
+.MyGridCheckBox:not(#foo) > input[type='checkbox'] + label {
+    padding: 0 0 0 20px; /* Left padding makes room for image */    
+}
+.MyGridCheckBoxWithLabel:not(#foo) > input[type='checkbox'] + label {
+    padding: 1px 0 0 30px; /* Left padding makes room for image */    
+    font-weight: normal;
+}
+
+.MyGridCheckBox:not(#foo) > input[type='checkbox']:checked + label, 
+.MyGridCheckBoxWithLabel:not(#foo) > input[type='checkbox']:checked + label {
+    background-image: url('checkbox_checked.png'); /* 20x20px */
+}

@@ -1,0 +1,1 @@
+<?phpclass UserData extends Model {	protected $table = 'UserData';	}
