@@ -72,7 +72,7 @@ ul.dropdown li{
 	border:none;
 }
 ul.dropdown li a, ul.dropdown *.dir{
-	height:39px;
+	height: 54px;
 }
 ul.dropdown ul li a, ul.dropdown ul *.dir{
 	border:none;
